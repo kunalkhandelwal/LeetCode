@@ -17,3 +17,5 @@ class Solution:
     #Merged sorted array for linked list
     #python sorting - NlogN, it is an internal sort about which we are not sure of, it sorts in the best possible way.
     # For while loop, always start with i=0 first!!! Because the system must know where to start from.
+    
+#Question: https://leetcode.com/explore/featured/card/fun-with-arrays/526/deleting-items-from-an-array/3247/
