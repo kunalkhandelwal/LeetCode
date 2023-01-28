@@ -1,0 +1,19 @@
+class Solution:
+    def removeElement(self, nums: List[int], val: int) -> int:
+        #n=0
+        #for i in range(len(nums)):
+        i=0
+        while i<len(nums):
+            if nums[i]==val:
+                nums.pop(i)
+            else:
+                i=i+1
+                #n=n+1
+        return(len(nums))
+    
+    #Use while loop whenever you are iterating in an array whose length is changing!
+    #Use for loop for automatic iteration of the array. Where the length of the array is always constant and you      are not deleting or adding any other element
+    
+    #Merged sorted array for linked list
+    #python sorting - NlogN, it is an internal sort about which we are not sure of, it sorts in the best possible way.
+    # For while loop, always start with i=0 first!!! Because the system must know where to start from.
