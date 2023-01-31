@@ -16,3 +16,28 @@
                 #print(nums)
             l=l+1
         return nums
+
+
+
+
+
+
+       l=0 # it is not nums[l]
+        
+        #[3,1,5,2,7,4]
+        #[3,1,5,2,7,9,4]
+        
+        r=len(nums)-1
+        while(nums[r]%2!=0 and r>=0): #why did we do this again? that is probably done for all odd numbers
+            r=r-1
+        
+        while l<r:
+            if nums[l]%2 != 0:  #checking whether the number is odd or not
+                (nums[l], nums[r]) = (nums[r], nums[l]) #swapping the numbers using the two pointer technique 
+                                                        # where l and r are the pointers starting from the                                                                  extreme left and extreme right
+                r=r-1 # reducing the value of r by 1 and adding 1 to the value of l as we are moving towards the end
+                while(nums[r]%2!=0 and r>=0): #this while loop is to check whether the number next to the previous r is even or not, and if it is even and the value of r is positive then it could be swapped if l is odd.
+                    r=r-1
+                #print(nums)
+            l=l+1
+        return nums
