@@ -1,0 +1,12 @@
+temp = 0   
+exp= heights[:] #shallow copy- both have same pointers
+exp.sort()
+print(exp)
+print(heights)
+for i in range(len(heights)):
+    if heights[i]!=exp[i]:
+        temp+=1
+        print(temp)
+    else:
+        print(temp)
+return temp
