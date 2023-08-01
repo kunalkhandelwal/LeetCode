@@ -4,3 +4,15 @@ class Solution:
             nums[i]= nums[i]*nums[i]
         nums.sort()
         return(nums)
+
+
+#July 31, 2023
+class Solution:
+    def sortedSquares(self, nums: List[int]) -> List[int]:
+        l1=[]
+        for i in range(len(nums)):
+            k=0
+            k=nums[i]*nums[i]
+            l1.append(k)
+        l1.sort()
+        return l1
